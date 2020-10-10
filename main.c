@@ -332,7 +332,7 @@ static GLFWwindow *mk_win(const char *name, int type, struct Extent *extent)
 #ifdef INP_MOUSE
 	glfwSetCursorPosCallback(win, glfw_mouse_callback);
 #endif
-	glfwSetInputMode(win, GLFW_CURSOR, GLFW_CURSOR_HIDDEN);
+	glfwSetInputMode(win, GLFW_CURSOR, GLFW_CURSOR_DISABLED);
 
 	return win;
 }
